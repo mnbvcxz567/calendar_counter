@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>今日から何日後？カレンダー</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <h1>今日から何日後？？カレンダー</h1>
+    <div class="calendar-container">
+        <div class="button-container">
+            <button id="prev" type="button">前の月</button>
+            <button id="next" type="button">次の月</button>
+        </div>
+        <div id="calendar"></div>
+    </div>
+
+        <!-- イベント入力モーダル -->
+    <div id="eventModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>予定を追加</h2>
+            <input type="text" id="eventTitle" placeholder="予定名">
+            <button id="saveEvent">保存</button>
+        </div>
+    </div>
+
+        <!-- イベント表示モーダル -->
+    <div id="viewEventsModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>予定一覧</h2>
+            <div id="eventList"></div>
+        </div>
+    </div>
+
+
+    <script src="js/cal.js"></script>
+</body>
+</html>
